@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/brandonabayer/burger/issues"
   },
-  "homepage": "https://github.com/brandonabayer/burger#readme"
+  "homepage": "https://github.com/brandonabayer/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

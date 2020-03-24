@@ -34,4 +34,3 @@ app.listen(PORT, function () {
     console.log("App now listening at localhost:" + PORT);
 });
 
-mysql://zj6koinpilghbyzh:gumf3l5ql63ntgy2@dno6xji1n8fm828n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/i7su9zp5tr2eqccx

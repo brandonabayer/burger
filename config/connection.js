@@ -6,11 +6,11 @@ if (process.env.JAWSDB_URL) {
 } else{
 
   mysql.createConnection({
-    host: "root",
+      host: "dno6xji1n8fm828n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     port: 3306,
-    user: "",
-    password: "",
-    database: "BurgerDB"
+      user: "zj6koinpilghbyzh",
+      password: "gumf3l5ql63ntgy2",
+      database: "i7su9zp5tr2eqccx"
 });
 };
 // Make connection.
