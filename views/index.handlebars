@@ -1,17 +1,38 @@
-<ul>
-    {{#each burger}}
-    <li>
-        <p><span class="label">ID:</span> {{this.id}}</p>
-        <p><span class="label">name:</span> {{this.name}}</p>
+<h1>Burgers: mySQL Sauce Edition</h1>
 
-        <button data-id="{{this.id}}" class="eatBurger">Eat</button>
-    </li>
-    {{/each}}
-</ul>
+<div class="row">
+  <div class="col-sm-6">
+    <h2>Available Burgers</h2>
+    <ul>
+      {{#each burger}}
+      {{#unless devoured}}
+      {{> burgers/burger-block devoured=false}}
+      {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
 
-<form class="form-group">
-    <h2>Burger Form</h2>
-    <label for="auth">Enter Burger Name:</label>
-    <input type="text" id="burgerID" name="burgerName">
-    <button type="submit" id="burgerSubmit">Add Burger</button>
-</form>
+  <div class="col-sm-6">
+    <h2>DevouredBurgers</h2>
+    <ul>
+      {{#each burger}}
+      {{#if devoured}}
+      {{> burgers/burger-block devoured=true}}
+      {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
+
+<div>
+  <h2>Add a Burger</h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="ca">Burger Name:</label>
+      <input type="text" id="ca" name="name">
+    </div>
+
+    <button type="submit">Add Burger</button>
+  </form>
+</div>
